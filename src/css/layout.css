@@ -1,0 +1,46 @@
+/* Layout specific styles */
+.landing-page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.phone-container {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.phone-frame {
+    background: #ffffff;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .phone-container {
+        max-width: 100%;
+    }
+    
+    .phone-frame {
+        border-radius: 20px;
+    }
+    
+    .phone-screen {
+        height: 250px;
+    }
+}
